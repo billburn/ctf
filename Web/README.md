@@ -2,8 +2,8 @@
 
 When reviewing web challenges, be sure to check for simple things
 
+## Encoding
 ```
-    Encoding
     # = %23
     ? = %3f
     ! = %21
