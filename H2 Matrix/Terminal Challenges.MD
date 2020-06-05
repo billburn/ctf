@@ -18,5 +18,4 @@ curl -X POST -d "status=on" --http2-prior-knowledge http://localhost:8080
 3a) (127.0.0.1; cat onboard.db) to get Mr. Chan's first name
 4) Finally, ran the runtoanswer binary (127.0.0.1; ./runtoanswer)
 ```
-
-![Testing] (https://github.com/billburn/ctf/blob/master/H2%20Matrix/Images/namegame-01.png)
+![Test](https://github.com/billburn/ctf/blob/master/H2%20Matrix/Images/namegame-01.png)
