@@ -20,3 +20,17 @@ curl -X POST -d "status=on" --http2-prior-knowledge http://localhost:8080
 4) Finally, ran the runtoanswer binary (127.0.0.1; ./runtoanswer)
 ```
 ![Name Game](https://github.com/billburn/ctf/blob/master/H2%20Matrix/Images/namegame-01.png)
+
+## The Sleighbell Terminal Chllenge
+[URL] https://docker.kringlecon.com/?challenge=unlinked-function&id=cac82b3d-199a-4ba1-b4e7-ffa566a0c370
+```
+1) Run the program and see what happens
+2) Run the program in GDB and list the functions (gdb -q sleighbell-lotto)
+2a) (gdb) info functions
+2b) We have a few functions that might be interesting (base64_decode and winnerwinner)
+3) Using the writeup from Ron Bowes: [GDB] https://www.sans.org/blog/using-gdb-to-call-random-functions/ we might try simply jumping to the function
+4) First set a break at main (break main)
+5) Once the breakpoint is hit, let's jump to "winnerwinner" and continue execution
+6) Voila!  That will do it
+```
+![Sleighbell Lotto](https://github.com/billburn/ctf/blob/master/H2%20Matrix/Images/sleighbell-lotto-01.png)
