@@ -34,3 +34,14 @@ curl -X POST -d "status=on" --http2-prior-knowledge http://localhost:8080
 6) Voila!  That will do it
 ```
 ![Sleighbell Lotto](https://github.com/billburn/ctf/blob/master/H2%20Matrix/Images/sleighbell-lotto-01.png)
+
+## Lethal ForensicELFication Terminal Challenge
+[URL] https://docker.kringlecon.com/?challenge=viminfo&id=e2632477-e60f-497b-8c9b-d4b4cdd07a68
+```
+1) Run the program and see what happens
+2) Check the directory structure to see what files are there (ls -lah)
+3) Run cat on the .bash_history and .viminfo files (cat .bash_history && cat .viminfo)
+4) We have a name "Elinore" at the top that looks to be a substitution, which the .bash_history suggests
+5) Run runtoanswer and that will do it (./runtoanswer)
+```
+![Lethal ForensicELFication](https://github.com/billburn/ctf/blob/master/H2%20Matrix/Images/viminfo-01.png)
