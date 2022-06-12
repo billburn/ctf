@@ -1,3 +1,12 @@
+# Solution
+
+1. Download the ciphertext
+2. We are provided the key "CYLAB"
+3. The quick solve, we can use CyberChef and simply get the answer
+4. For a more involved solution, we use John Hammond's code, to decode the Vinegere cipher
+
+## Code
+```
 #!/usr/bin/env python3
 # Code sourced from John Hammond's Katana repo - https://github.com/JohnHammond/katana/tree/master/katana/units/crypto
 
@@ -6,16 +15,15 @@ import string
 
 click.clear()
 
-'''
-with open(b"cipher.txt", "r") as f_contents:
-	contents = f_contents.read()
+#with open(b"cipher.txt", "r") as f_contents:
+#        contents = f_contents.read()
 
-with open(b"key.txt", "r") as f_key:
-	challenge_key = f_key.read()
+#with open(b"key.txt", "r") as f_key:
+#        challenge_key = f_key.read()
 
 #print(contents)
 #print(challenge_key)
-'''
+
 
 def vigenere(plaintext, key):
     """
@@ -49,3 +57,10 @@ ciphertext = b"rgnoDVD{O0NU_WQ3_G1G3O3T3_A1AH3S_cc82272b}"
 key = "CYLAB"
 
 print(vigenere(ciphertext, key))
+
+```
+
+## Flag
+```
+PICOCTF{D0NT_US3_V1G3N3R3_C1PH3R_AE82272Q}
+```
